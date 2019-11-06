@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadFinish">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/successimg"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:background="@drawable/success" />
+
+        <TextView
+            android:id="@+id/success"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="31dp"
+            android:text="Your product was uploaded succesfully"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/advice"
+            android:layout_width="311dp"
+            android:layout_height="78dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="145dp"
+            android:text="You can now edit and manage your product from the Product Management tab."
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/pmtab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/advice"
+            android:layout_centerHorizontal="true"
+            android:text="Product Management tab"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adminlogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/adminlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADMIN LOG IN"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/adminusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_margin="5dp"
+            android:hint="Username or Email"/>
+
+        <EditText
+            android:id="@+id/adminpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_margin="5dp"
+            android:hint="Password"/>
+
+        <Button
+            android:id="@+id/adminloginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/adminnoaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign up for Free!"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/adminforgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
